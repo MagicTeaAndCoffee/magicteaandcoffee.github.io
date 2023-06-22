@@ -9,13 +9,22 @@
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
+.menu {
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+
+}
 .waveWrapper {
     overflow: hidden;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    top: 0;
+    top: 50px;
     margin: auto;
 }
 .waveWrapperInner {
@@ -59,11 +68,11 @@
     background-size: 50% 120px;
 }
 .waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
+    animation: move_wave 5s linear infinite;
 }
 .waveBottom {
     background-size: 50% 100px;
 }
 .waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
+    animation: move_wave 10s linear infinite;
 }
