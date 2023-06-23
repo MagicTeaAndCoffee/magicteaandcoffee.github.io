@@ -22,21 +22,10 @@
     nav {
       background-color: #f2f2f2;
       padding: 10px;
-      display: none;
     }
     
     .menu-toggle {
-      display: block;
-      text-align: center;
-      padding: 5px;
-      cursor: pointer;
-    }
-    
-    .menu-toggle div {
-      width: 25px;
-      height: 3px;
-      background-color: #333;
-      margin: 5px 0;
+      display: none;
     }
     
     nav ul {
@@ -63,18 +52,19 @@
         padding: 10px;
       }
       
-      nav.collapsed {
+      .menu-toggle {
         display: block;
-        text-align: center;
+        text-align: right;
+        padding: 5px;
+        cursor: pointer;
+      }
+      
+      nav ul {
+        display: none;
       }
       
       nav.collapsed ul {
-        display: inline-block;
-        padding: 0;
-      }
-      
-      .menu-toggle {
-        background-color: red;
+        display: block;
       }
     }
   </style>
@@ -89,7 +79,11 @@
 <body>
   <header>
     <h1>Responsive Webpage</h1>
-    <div class="menu-toggle" onclick="toggleMenu()"></div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -111,6 +105,7 @@
   </footer>
 </body>
 </html>
+
 
 
 <!--
