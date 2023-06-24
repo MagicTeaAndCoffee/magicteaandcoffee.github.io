@@ -3,120 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Webpage</title>
-  <style>
-    /* CSS Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #f2f2f2;
-      color: #fff;
-      padding: 10px 0 10px 0;
-      text-align: center;
-    }
-    
-    nav {
-      background-color: #f2f2f2;
-      padding: 0px;
-    }
-    
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    
-    nav ul li {
-      display: inline-block;
-      margin: 0 5px;
-    }
-    
-    nav ul li a {
-      color: #333;
-      text-decoration: none;
-      padding: 5px 10px;
-    }
-    
-    /* Media Queries */
-    @media (max-width: 600px) {
-      header, footer {
-        padding: 10px 0 10px 0;
-      }
-    }
-
-    /* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
-  </style>
-
-  <script>
-    // When the user clicks on <div>, open the popup
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-  </script>
+  <title>Magic House Milk Tea</title>
+  <link rel="icon" type="images/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css">
+ 
 </head>
 <body>
   <header>
      <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="./index.html"><img src="images/MagicTea_Icon.png" style="width:25px;height:25px"></a></li>
         <li><a href="#">Showcase</a></li>
         <li><a href="#">Menu</a></li>
         <li><a href="#">Order</a></li>
@@ -127,8 +23,11 @@
 
   <main>
 
-    <div class="popup" onclick="myFunction()">Click me!
-      <span class="popuptext" id="myPopup">Popup text...</span>
+    <div class="milkteaseries">
+        <h2>Milk Tea Series</h2>
+        <div class="imagewrapper">
+          <img src="images/MilkTeaSeries.png">
+        </div>
     </div>
 
     <h2>Welcome to My Responsive Webpage</h2>
