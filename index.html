@@ -6,6 +6,7 @@
   <title>Magic House Milk Tea</title>
   <link rel="icon" type="./images/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
  
 </head>
 <body>
@@ -25,9 +26,17 @@
 
     <div class="milkteaseries">
         <h2>Milk Tea Series</h2>
-        <div class="imagewrapper">
-          <img src="./images/MilkTeaSeries.png">
-        </div>
+       
+        
+    </div>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/MilkTeaSeries.png" alt="Image 1">
+        </div>        
+        
+      </div>
     </div>
 
     <h2>Welcome to My Responsive Webpage</h2>
@@ -37,6 +46,28 @@
   <footer>
     &copy; 2023 Your Website | All rights reserved.
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      centeredSlides: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          centeredSlides: false,
+          grabCursor: false,
+        }
+      }
+    });
+  </script>
+  
 </body>
 </html>
 
