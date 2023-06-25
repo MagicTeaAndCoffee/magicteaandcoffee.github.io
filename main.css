@@ -53,28 +53,28 @@ nav ul li a {
   
 }
 
-.swiper-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
+.image-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-  }
-  
-  .swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-pagination {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 50%;
+    margin: 0 auto;
   }
 
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 600px) {
+    .image-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+    }
+
+    .image-container img {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+      }
+  }
