@@ -25,11 +25,8 @@
   <main>
 
     <div class="milkteaseries">
-        <h2>Milk Tea Series2</h2>
-       
-        
-    
-
+        <h2>Milk Tea Series 3</h2>        
+    <div class="imagewrapper">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -44,6 +41,7 @@
       </div>
     </div>
     </div>
+    </div>
     <h2>Welcome to My Responsive Webpage</h2>
     <p>This is the main content of the webpage.</p>
   </main>
@@ -53,41 +51,44 @@
   </footer>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-     var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    centeredSlides: true,
-    grabCursor: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      600: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        centeredSlides: true,
-        grabCursor: false,
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      centeredSlides: true,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
-      960: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        centeredSlides: true,
-        grabCursor: false,
+      on: {
+        init: function () {
+          var middleSlide = Math.floor(this.slides.length / 2);
+          this.slideTo(middleSlide, 0);
+        }
       },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-        centeredSlides: true,
-        grabCursor: false,
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          centeredSlides: false,
+          grabCursor: false,
+        },
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          centeredSlides: false,
+          grabCursor: false,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          centeredSlides: false,
+          grabCursor: false,
+        }
       }
-    }
-  });
+    });
   </script>
+  
   
 </body>
 </html>
