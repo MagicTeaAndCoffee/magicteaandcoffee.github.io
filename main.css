@@ -44,10 +44,10 @@ nav ul li a {
     }
 }
 
-milkteaseries{
+.milkteaseries{
     text-align: center;
 }
 
-milkteaseries imagewrapper{
+.milkteaseries .imagewrapper{
     margin: auto;
 }
