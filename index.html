@@ -51,8 +51,10 @@
   </footer>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+    var swiper;
+  
     function initializeSwiper() {
-      var swiper = new Swiper('.swiper-container', {
+      swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
         spaceBetween: 10,
         centeredSlides: true,
@@ -60,6 +62,12 @@
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
+        },
+        on: {
+          init: function () {
+            var middleSlide = Math.floor(this.slides.length / 2);
+            this.slideTo(middleSlide, 0);
+          }
         },
         breakpoints: {
           600: {
@@ -82,20 +90,20 @@
           }
         }
       });
-      
-      swiper.on('init', function () {
-        var middleSlide = Math.floor(swiper.slides.length / 2);
-        swiper.slideTo(middleSlide, 0);
-      });
-      
-      swiper.on('touchStart', function () {
-        swiper.destroy();
-        initializeSwiper();
-      });
     }
   
     initializeSwiper();
+  
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 600 && swiper) {
+        swiper.destroy();
+        swiper = null;
+      } else if (window.innerWidth < 600 && !swiper) {
+        initializeSwiper();
+      }
+    });
   </script>
+  
   
   
   
