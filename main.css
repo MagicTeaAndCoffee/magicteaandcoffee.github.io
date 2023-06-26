@@ -157,6 +157,38 @@ h1 {
     
 }
 
+.Tampa1Location{
+    background-color: rgb(146, 216, 96);
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 50px;
+}
+
+.Tampa1Location h1{
+    color: white;
+    
+}
+
+.Tampa1Location a{
+    font-size: larger;
+    
+}
+
+.Dunedin1Location{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+.Dunedin1Location h1{
+    color: white;
+}
+
+.Dunedin1Location h3{
+    color: white;
+}
+
 .image-container {
     display: flex;
     justify-content:center;
