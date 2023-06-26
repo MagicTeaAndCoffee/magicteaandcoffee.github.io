@@ -44,6 +44,7 @@ h1 {
 .milkteaseries{
     background-color: #dbd8d8;
     text-align: center;
+    margin-top: -20px;
 }
 
 .milkteaseries .imagewrapper{
@@ -53,9 +54,13 @@ h1 {
 .freshfruitteaseries{
     background-color: black;
     text-align: center;
-    
+    margin-top: -10px;
 }
 
+.freshfruitteaseries h1{
+    color: white;
+    
+}
 .image-container {
     display: flex;
     justify-content:center;
