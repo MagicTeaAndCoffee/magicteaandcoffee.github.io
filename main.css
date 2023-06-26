@@ -84,6 +84,28 @@ h1 {
     
 }
 
+.FruitSmoothieSeries{
+    background-color: rgb(150, 212, 125);
+    text-align: center;
+    margin-top: -10px;
+}
+
+.FruitSmoothieSeries h1{
+    color: white;
+    
+}
+
+.CoffeeSeries{
+    background-color: rgb(61, 37, 35);
+    text-align: center;
+    margin-top: -10px;
+}
+
+.CoffeeSeries h1{
+    color: white;
+    
+}
+
 .image-container {
     display: flex;
     justify-content:center;
