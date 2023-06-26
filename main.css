@@ -121,14 +121,14 @@ h1 {
 }
 
 .showcase1 {
-    background-color: rgb(150, 212, 125);
+    background-color: rgb(173, 191, 82);
     text-align: center;
     margin-top: -10px;
     padding-bottom: 50px;
 }
 
 
-.container {
+.sc-container {
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr;
@@ -248,7 +248,7 @@ h1 {
         margin-bottom: 20px;
     }
 
-    .container {
+    .sc-container {
         grid-template-columns: 1fr;
     }
 }
