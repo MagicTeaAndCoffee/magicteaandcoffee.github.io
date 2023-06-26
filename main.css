@@ -52,7 +52,7 @@ h1 {
 }
 
 .freshfruitteaseries{
-    background-color: black;
+    background-color: rgb(81, 153, 124);
     text-align: center;
     margin-top: -10px;
 }
@@ -62,13 +62,24 @@ h1 {
     
 }
 
-.SweetCreamColdFoam{
+.SweetCreamColdFoamSeries{
     background-color: rgb(173, 191, 82);
     text-align: center;
     margin-top: -10px;
 }
 
-.SweetCreamColdFoam h1{
+.SweetCreamColdFoamSeries h1{
+    color: white;
+    
+}
+
+.RefreshingLemonadeSeries{
+    background-color: rgb(191, 178, 82);
+    text-align: center;
+    margin-top: -10px;
+}
+
+.RefreshingLemonadeSeries h1{
     color: white;
     
 }
