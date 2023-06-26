@@ -14,10 +14,10 @@
      <nav>
       <ul>
         <li><a href="./index.html"><img src="./images/MagicTea_Icon.png" style="width:25px;height:25px"></a></li>
-        <li><a href="#">Showcase</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Order</a></li>
-        <li><a href="./index.html"><img src="./images/contactus.png" style="width:25px;height:25px"></a></li>
+        <li><a href="./showcase.html">Showcase</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./order.html">Order</a></li>
+        <li><a href="./contact.html"><img src="./images/contactus.png" style="width:25px;height:25px"></a></li>
       </ul>
     </nav>
   </header>
@@ -66,55 +66,18 @@
       </div> 
     </div>
 
+    <div class="Dessert">
+      <h1>Dessert </h1>        
+      <div class="image-container">
+        <img src="./images/Dessert.png" alt="Dessert">
+      </div> 
+    </div>
 
   </main>
 
   <footer>
-    &copy; 2023 Your Website | All rights reserved.
+    &copy; 2023 Magic House Enterprise, LLC | All rights reserved.
   </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 10,
-      centeredSlides: true,
-      grabCursor: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      on: {
-        init: function () {
-          var middleSlide = Math.floor(this.slides.length / 2);
-          this.slideTo(middleSlide, 0);
-        }
-      },
-      breakpoints: {
-        600: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-          centeredSlides: false,
-          grabCursor: false,
-        },
-        960: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          centeredSlides: false,
-          grabCursor: false,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-          centeredSlides: false,
-          grabCursor: false,
-        }
-      }
-    });
-  </script>
-  
-  
-  
   
   
 </body>

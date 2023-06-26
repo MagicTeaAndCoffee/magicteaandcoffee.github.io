@@ -66,6 +66,7 @@ h1 {
     background-color: rgb(173, 191, 82);
     text-align: center;
     margin-top: -10px;
+    padding-bottom: 20px;
 }
 
 .SweetCreamColdFoamSeries h1{
@@ -77,6 +78,7 @@ h1 {
     background-color: rgb(191, 178, 82);
     text-align: center;
     margin-top: -10px;
+    padding-bottom: 20px;
 }
 
 .RefreshingLemonadeSeries h1{
@@ -99,9 +101,21 @@ h1 {
     background-color: rgb(61, 37, 35);
     text-align: center;
     margin-top: -10px;
+    padding-bottom: 20px;
 }
 
 .CoffeeSeries h1{
+    color: white;
+    
+}
+
+.Dessert{
+    background-color: rgb(188, 94, 185);
+    text-align: center;
+    margin-top: -10px;
+}
+
+.Dessert h1{
     color: white;
     
 }
