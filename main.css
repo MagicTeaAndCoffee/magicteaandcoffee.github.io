@@ -246,5 +246,9 @@ h1 {
     .image-container img {
         width: calc(100% - 20px);
         margin-bottom: 20px;
-      }
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
