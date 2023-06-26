@@ -120,8 +120,35 @@ h1 {
     
 }
 
+.showcase1 {
+    background-color: rgb(150, 212, 125);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.showcase-image {
+    max-width: 100%;
+    max-height:100%;
+  }
+  
+.item-description {
+    font-size: 14px;
+    
+}
+
 .LeftTV{
-    background-color: rgb(188, 94, 185);
+    background-color: rgb(236, 144, 15);
     text-align: center;
     margin-top: -10px;
     padding-bottom: 50px;
@@ -134,7 +161,7 @@ h1 {
 
 
 .MiddleTV{
-    background-color: rgb(188, 94, 185);
+    background-color: rgb(236, 144, 15);
     text-align: center;
     margin-top: -10px;
     padding-bottom: 50px;
@@ -146,7 +173,7 @@ h1 {
 }
 
 .RightTV{
-    background-color: rgb(188, 94, 185);
+    background-color: rgb(236, 144, 15);
     text-align: center;
     margin-top: -10px;
     padding-bottom: 50px;
