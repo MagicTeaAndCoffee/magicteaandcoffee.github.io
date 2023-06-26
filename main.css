@@ -120,6 +120,43 @@ h1 {
     
 }
 
+.LeftTV{
+    background-color: rgb(188, 94, 185);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+.LeftTV h1{
+    color: white;
+    
+}
+
+
+.MiddleTV{
+    background-color: rgb(188, 94, 185);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+.MiddleTV h1{
+    color: white;
+    
+}
+
+.RightTV{
+    background-color: rgb(188, 94, 185);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+.RightTV h1{
+    color: white;
+    
+}
+
 .image-container {
     display: flex;
     justify-content:center;
