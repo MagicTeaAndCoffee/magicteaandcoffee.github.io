@@ -225,6 +225,20 @@ h1 {
     color: white;
 }
 
+.BuschGardens1Location{
+    background-color:  rgb(146, 216, 96);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+.BuschGardensLocation h1{
+    color: white;
+}
+
+.BuschGardens1Location h3{
+    color: white;
+}
 .image-container {
     display: flex;
     justify-content:center;
