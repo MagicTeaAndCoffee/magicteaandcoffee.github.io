@@ -232,13 +232,29 @@ h1 {
     padding-bottom: 50px;
 }
 
-.BuschGardensLocation h1{
+.BuschGardens1Location h1{
     color: white;
 }
 
 .BuschGardens1Location h3{
     color: white;
 }
+
+.DaleMabry1Location{
+    background-color:  rgb(239, 128, 234);
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+.DaleMabry1Location h1{
+    color: white;
+}
+
+.DaleMabry1Location h3{
+    color: white;
+}
+
 .image-container {
     display: flex;
     justify-content:center;
@@ -274,3 +290,16 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
