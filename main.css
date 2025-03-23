@@ -263,11 +263,23 @@ h1 {
     margin: 0 auto;
   }
 
+.image-container2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
 .image-container img {
     max-width: 100%;
     height: auto;
  }
 
+.image-container2 img {
+    max-width: 100%;
+    height: auto;
+ }
  @media (max-width: 600px) {
     header, footer {
         padding: 10px 0 10px 0;
@@ -280,12 +292,21 @@ h1 {
       justify-content: center;
       max-width: 100%;
     }
-
+    .image-container2 {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      max-width: 20%;
+      margin: 0 auto;
+    }
     .image-container img {
         width: calc(100% - 20px);
         margin-bottom: 20px;
     }
-
+    .image-container2 img {
+      max-width: 100%;
+      height: auto;
+    }
     .sc-container {
         grid-template-columns: 1fr;
     }
